@@ -16,7 +16,7 @@ podman run \
   --security-opt=label=disable \
   --name ollama \
   --device nvidia.com/gpu=all \
-  -v ollama-data:/data \
+  -v ollama-data:/root/.ollama \
   -e OLLAMA_BASE_URL=http://olama:11434 \
   ollama/ollama:latest
 
