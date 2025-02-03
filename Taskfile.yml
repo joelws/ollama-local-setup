@@ -1,0 +1,15 @@
+version: "3"
+
+tasks:
+  create:
+    desc: start local ollama containers
+    cmds:
+      - sh ./bin/create.sh
+  remove:
+    desc: remove the ollama-local pod
+    cmds:
+      - sh ./bin/remove.sh
+  ollama-tty:
+    desc: ollama terminal
+    cmds:
+      - podman exec -it ollama /bin/bash
