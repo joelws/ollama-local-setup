@@ -2,7 +2,7 @@ version: "3"
 
 tasks:
   create:
-    desc: start local ollama containers
+    desc: create ollama-local pod
     cmds:
       - sh ./bin/create.sh
   remove:
