@@ -6,7 +6,7 @@ tasks:
     cmds:
       - sh ./bin/create.sh
   remove:
-    desc: remove the ollama-local pod
+    desc: remove ollama-local pod
     cmds:
       - sh ./bin/remove.sh
   ollama-tty:
