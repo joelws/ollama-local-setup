@@ -20,9 +20,9 @@ podman run \
   -e OLLAMA_BASE_URL=http://olama:11434 \
   ollama/ollama:latest
 
-podman run \
-  --pod ollama-local \
-  -d \
-  --name open-webui \
-  -v open-webui:/app/backend/data \
-  ghcr.io/open-webui/open-webui:main
+# podman run \
+#   --pod ollama-local \
+#   -d \
+#   --name open-webui \
+#   -v open-webui:/app/backend/data \
+#   ghcr.io/open-webui/open-webui:main
